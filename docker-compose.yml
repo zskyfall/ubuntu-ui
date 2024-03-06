@@ -1,0 +1,36 @@
+version: "3.0"
+services:
+    ubuntu_ui:
+      restart: always
+      container_name: 'ubuntu_ui'
+      build:
+        context: .
+        dockerfile: Dockerfile
+      networks:
+        - traefik_net
+      ports:
+        - "3896:3896"
+      volumes:
+        - .env.docker:/app/.env
+        - ./db:/app/db
+      # labels:
+      #   - 'traefik.enable=true'
+      #   - 'traefik.http.routers.auto_gpt.rule=Host(`autogptvn.com`)'
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.ubuntu_ui.rule=Host(`ubuntu.photone.vn`)
+        - traefik.http.routers.ubuntu_ui.tls=true
+        - traefik.http.routers.ubuntu_ui.entrypoints=web,websecure
+        # - traefik.http.routers.gpt4.tls.certresolver=mytlschallenge
+        # - traefik.http.middlewares.gpt4.headers.SSLRedirect=true
+        # - traefik.http.middlewares.gpt4.headers.STSSeconds=315360000
+        # - traefik.http.middlewares.gpt4.headers.browserXSSFilter=true
+        # - traefik.http.middlewares.gpt4.headers.contentTypeNosniff=true
+        # - traefik.http.middlewares.gpt4.headers.forceSTSHeader=true
+        # - traefik.http.middlewares.gpt4.headers.SSLHost=autogptvn.com
+        # - traefik.http.middlewares.gpt4.headers.STSIncludeSubdomains=true
+        # - traefik.http.middlewares.gpt4.headers.STSPreload=true
+        # - traefik.http.routers.gpt4.middlewares=n8n@docker
+networks:
+  traefik_net:
+    external: true

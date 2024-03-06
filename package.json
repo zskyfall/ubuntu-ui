@@ -1,12 +1,12 @@
 {
-  "name": "vivek9patel-portfolio",
+  "name": "photone-vn",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://vivek9patel.github.io/",
+  "homepage": "https://photone.vn/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3896",
     "export": "next export"
   },
   "engines": {

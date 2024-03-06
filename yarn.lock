@@ -12,15 +12,10 @@
   resolved "https://registry.npmjs.org/@next/env/-/env-13.1.2.tgz"
   integrity sha512-PpT4UZIX66VMTqXt4HKEJ+/PwbS+tWmmhZlazaws1a+dbUA5pPdjntQ46Jvj616i3ZKN9doS9LHx3y50RLjAWg==
 
-"@next/swc-linux-x64-gnu@13.1.2":
+"@next/swc-darwin-arm64@13.1.2":
   version "13.1.2"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.1.2.tgz"
-  integrity sha512-TsLsjZwUlgmvI42neTuIoD6K9RlXCUzqPtvIClgXxVO0um0DiZwK+M+0zX/uVXhMVphfPY2c5YeR1zFSIONY4A==
-
-"@next/swc-linux-x64-musl@13.1.2":
-  version "13.1.2"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.1.2.tgz"
-  integrity sha512-eSkyXgCXydEFPTkcncQOGepafedPte6JT/OofB9uvruucrrMVBagCASOuPxodWEMrlfEKSXVnExMKIlfmQMD7A==
+  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.1.2.tgz"
+  integrity sha512-RikoQqy109r2222UJlyGs4dZw2BibkfPqpeFdW5JEGv+L2PStlHID8DwyVYbmHfQ0VIBGvbf/NAUtFakAWlhwg==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

@@ -29,7 +29,7 @@ const apps = [
     },
     {
         id: "about-vivek",
-        title: "About Vivek",
+        title: "N8N AI",
         icon: './themes/Yaru/system/user-home.png',
         disabled: false,
         favourite: true,
