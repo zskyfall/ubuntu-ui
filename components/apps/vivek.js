@@ -288,6 +288,16 @@ function Skills() {
       </div>
       <ul className=" tracking-tight text-sm md:text-base w-10/12 emoji-list">
         <li className=" list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
+          <div>
+            <strong className="text-ubt-gedit-orange">
+              Link truy cập:{" "}
+              <a href="http://n8n.photone.vn" target="_blank">
+                N8N AI
+              </a>
+            </strong>
+          </div>
+        </li>
+        <li className=" list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
           Tích hợp đa dạng module AI mới nhất như OpenAI, Langchain,...
         </li>
         <li className=" list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">

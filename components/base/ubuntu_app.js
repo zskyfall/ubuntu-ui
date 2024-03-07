@@ -5,6 +5,10 @@ export class UbuntuApp extends Component {
     window.location.href = "https://photone.vn";
   };
 
+  goN8N = () => {
+    window.location.href = "https://n8n.photone.vn";
+  };
+
   openApp = () => {
     this.props.openApp(this.props.id);
   };
@@ -17,6 +21,8 @@ export class UbuntuApp extends Component {
         onDoubleClick={() => {
           this.props.id === "photone_vn_home"
             ? this.goPhotone()
+            : this.props.id === "n8n_ai"
+            ? this.goN8N()
             : this.openApp();
         }}
         tabIndex={0}

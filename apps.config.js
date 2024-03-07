@@ -82,6 +82,15 @@ const apps = [
     screen: displayGedit,
   },
   {
+    id: "n8n_ai",
+    title: "N8N AI",
+    icon: "./themes/Yaru/apps/ubuntu_photone_n8n.png",
+    disabled: false,
+    favourite: true,
+    desktop_shortcut: true,
+    screen: displayGedit,
+  },
+  {
     id: "trash",
     title: "Trash",
     icon: "./themes/Yaru/system/user-trash-full.png",
